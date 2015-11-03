@@ -1,2 +1,0 @@
-# 2015MIMA
-2015 MIMA programs
