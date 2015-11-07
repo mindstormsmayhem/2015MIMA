@@ -38,7 +38,7 @@
                     </ConfigurableWhileLoop.BuiltInMethod>
                     <ConfigurableWhileLoop.BuiltInMethod CallType="StopCondition">
                         <ConfigurableMethodCall Id="n1" Bounds="179 41 85 91" Target="TimeCompareLoop\.vix">
-                            <ConfigurableMethodTerminal ConfiguredValue="5">
+                            <ConfigurableMethodTerminal ConfiguredValue="4">
                                 <Terminal Id="How\ Long" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -58,7 +58,7 @@
                         <ConfigurableMethodTerminal ConfiguredValue="True">
                             <Terminal Id="Right\ sensor\?" Direction="Input" DataType="Boolean" Hotspot="0.5 1" Bounds="54 56 30 27" />
                         </ConfigurableMethodTerminal>
-                        <ConfigurableMethodTerminal ConfiguredValue="True">
+                        <ConfigurableMethodTerminal ConfiguredValue="False">
                             <Terminal Id="Right\ side\?" Direction="Input" DataType="Boolean" Hotspot="0.5 1" Bounds="85 56 30 27" />
                         </ConfigurableMethodTerminal>
                         <Terminal Id="SequenceIn" Direction="Input" Wire="w6" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
