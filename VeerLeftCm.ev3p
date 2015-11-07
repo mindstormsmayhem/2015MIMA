@@ -18,7 +18,7 @@
                     </ConfigurableMethodTerminal>
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w16" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="52 33 18 18" />
                 </StartBlock>
-                <ConfigurableMethodCall Id="n4" Bounds="1130 114 194 91" Target="MoveTankDistance\.vix">
+                <ConfigurableMethodCall Id="n4" Bounds="1121 114 194 91" Target="MoveTankDistance\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1.B+C">
                         <Terminal Id="Ports" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
@@ -40,7 +40,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="176 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="n7" Bounds="804 114 163 91" Target="Arithmetic_Multiply\.vix">
+                <ConfigurableMethodCall Id="n7" Bounds="795 114 163 91" Target="Arithmetic_Multiply\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1">
                         <Terminal Id="X" Direction="Input" Wire="w13" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -65,9 +65,9 @@
                         <Terminal Id="Coast\ motors" Direction="Output" Wire="w14" DataType="Boolean" Hotspot="0.5 1" Bounds="72 56 30 27" />
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
-                <Wire Id="w13" Joints="N(n16:Speed) v(53) h(478) N(n7:X) B(0) v(45) h(835) N(n4:Speed\ Right)" />
-                <Wire Id="w14" Joints="N(n16:Coast\ motors) v(62) h(866) N(n4:Brake\ At\ End)" />
-                <ConfigurableMethodCall Id="n14" Bounds="967 114 163 91" Target="Arithmetic_Divide\.vix">
+                <Wire Id="w13" Joints="N(n16:Speed) v(45) h(826) N(n4:Speed\ Right) B(0) v(53) h(469) N(n7:X)" />
+                <Wire Id="w14" Joints="N(n16:Coast\ motors) v(62) h(857) N(n4:Brake\ At\ End)" />
+                <ConfigurableMethodCall Id="n14" Bounds="958 114 163 91" Target="Arithmetic_Divide\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1">
                         <Terminal Id="X" Direction="Input" Wire="w18" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -83,7 +83,7 @@
                 <Wire Id="w17" Joints="N(n14:SequenceOut) N(n4:SequenceIn)" />
                 <Wire Id="w18" Joints="N(n7:Result) v(22) h(101) N(n14:X)" />
                 <Wire Id="w19" Joints="N(n14:Result) v(22) h(101) N(n4:Speed\ Left)" />
-                <ConfigurableMethodCall Id="n17" Bounds="703 114 101 91" Target="X3\.Lib:GlobalGetSingle">
+                <ConfigurableMethodCall Id="n17" Bounds="694 114 101 91" Target="X3\.Lib:GlobalGetSingle">
                     <ConfigurableMethodTerminal>
                         <Terminal Id="valueOut" Direction="Output" Wire="w21" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -110,7 +110,7 @@
                 </ConfigurableMethodCall>
                 <Wire Id="w16" Joints="N(n1:SequenceOut) N(n15:SequenceIn)" />
                 <Wire Id="w22" Joints="N(n16:cm) v(22) h(267) N(n15:Distance\ \(cm\))" />
-                <Wire Id="w23" Joints="N(n15:Robot\ degrees) v(30) h(599) N(n4:Degrees)" />
+                <Wire Id="w23" Joints="N(n15:Robot\ degrees) v(30) h(590) N(n4:Degrees)" />
                 <Wire Id="w24" Joints="N(n15:SequenceOut) N(n17:SequenceIn)" />
             </BlockDiagram>
             <Icon>
