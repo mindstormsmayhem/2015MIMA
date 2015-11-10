@@ -147,19 +147,6 @@
                 <Wire Id="w16" Joints="N(n13:SequenceOut) N(n2:SequenceIn)" />
                 <Wire Id="w18" Joints="N(n14:SequenceOut) N(n4:SequenceIn)" />
                 <Wire Id="w19" Joints="N(n4:SequenceOut) N(n20:SequenceIn)" />
-                <ConfigurableWaitFor Id="n19" Bounds="1024 240 101 91" Target="TimeCompare\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="How\ Long" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal>
-                        <Terminal Id="Result" Direction="Output" DataType="Boolean" Hotspot="0.5 1" Bounds="0 0 0 0" />
-                    </ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
-                    <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
-                </ConfigurableWaitFor>
                 <ConfigurableWaitFor Id="n20" Bounds="735 0 101 91" Target="TimeCompare\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1">
                         <Terminal Id="How\ Long" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
