@@ -21,7 +21,7 @@
                 </ConfigurableMethodCall>
                 <Wire Id="w3" Joints="N(n1:SequenceOut) N(n3:SequenceIn)" />
                 <ConfigurableWaitFor Id="n6" Bounds="308 0 101 91" Target="TouchChange\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="1.2">
+                    <ConfigurableMethodTerminal ConfiguredValue="1.1">
                         <Terminal Id="Port" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0">
