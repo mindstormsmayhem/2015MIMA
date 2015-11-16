@@ -213,7 +213,7 @@
                                 <Comment Bounds="236 3 318 35" SizeMode="User" AttachStyle="Free">
                                     <Content>Back up faster next time</Content>
                                 </Comment>
-                                <Comment Bounds="685 4 92 33" SizeMode="User" AttachStyle="Free">
+                                <Comment Bounds="778 8 92 33" SizeMode="User" AttachStyle="Free">
                                     <Content>Restart timer</Content>
                                 </Comment>
                                 <ConfigurableWaitFor Id="n16" Bounds="679 42 101 91" Target="TimeCompare\.vix">
@@ -318,7 +318,7 @@
                     <Content>Start at a reasonable speed
 </Content>
                 </Comment>
-                <Comment Bounds="1089 -40 335 31" SizeMode="User" AttachStyle="Free">
+                <Comment Bounds="1242 -35 335 31" SizeMode="User" AttachStyle="Free">
                     <Content>Keep going until both touch sensors are triggered</Content>
                 </Comment>
                 <Comment Bounds="2237 97 91 35" SizeMode="User" AttachStyle="Free">
