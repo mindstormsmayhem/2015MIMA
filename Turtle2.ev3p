@@ -368,7 +368,7 @@
                 <Wire Id="w64" Joints="N(n48:SequenceOut) h(10) v(53) h(-606) v(94) N(n27:SequenceIn)" />
                 <Wire Id="w66" Joints="N(n42:SequenceOut) N(n61:SequenceIn)" />
                 <ConfigurableMethodCall Id="n58" Bounds="394 335 163 91" Target="GoCentimeters\.ev3p">
-                    <ConfigurableMethodTerminal ConfiguredValue="30">
+                    <ConfigurableMethodTerminal ConfiguredValue="50">
                         <Terminal Id="Speed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="100">
@@ -387,7 +387,7 @@
                     <ConfigurableMethodTerminal ConfiguredValue="-40">
                         <Terminal Id="cm" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="30">
+                    <ConfigurableMethodTerminal ConfiguredValue="40">
                         <Terminal Id="Speed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="True">
@@ -415,7 +415,7 @@
                 <Wire Id="w68" Joints="N(n61:SequenceOut) N(n62:SequenceIn)" />
                 <Wire Id="w73" Joints="N(n50:SequenceOut) h(10) v(121) h(-601) v(46) N(n52:SequenceIn)" />
                 <ConfigurableMethodCall Id="n62" Bounds="676 227 163 91" Target="GoCentimeters\.ev3p">
-                    <ConfigurableMethodTerminal ConfiguredValue="20">
+                    <ConfigurableMethodTerminal ConfiguredValue="40">
                         <Terminal Id="Speed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="-40">
