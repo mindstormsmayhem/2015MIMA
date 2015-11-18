@@ -477,6 +477,12 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w61" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w61" Joints="N(n60:SequenceOut) N(n48:SequenceIn)" />
+                <Comment Bounds="-168 -99 100 80" SizeMode="User" AttachStyle="Free">
+                    <Content></Content>
+                </Comment>
+                <Comment Bounds="-168 -99 100 80" SizeMode="User" AttachStyle="Free">
+                    <Content>hello</Content>
+                </Comment>
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>
