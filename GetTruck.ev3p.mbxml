@@ -4,7 +4,7 @@
     <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_091_Datalogging">
       <Block>
         <Mode>MyBlock</Mode>
-        <Description />
+        <Description>Get the truck, pick up the yellow bin, deliver the people to their careers, and pull the truck back to safety</Description>
         <Reference Type="VILib" />
         <PaletteInfo Weight="0.5" />
       </Block>

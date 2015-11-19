@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_091_Datalogging">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description>Push the truck to the east end of the table, east of the guide.  Does not return to safety.</Description>
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>
