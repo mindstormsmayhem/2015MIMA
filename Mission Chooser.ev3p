@@ -110,7 +110,7 @@
                         <Terminal Id="SequenceOut" Direction="Output" Wire="w16" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                     </ConfigurableMethodCall>
                     <Wire Id="w16" Joints="N(n15:SequenceOut) N(n13:SequenceIn)" />
-                    <Wire Id="w17" Joints="N(n15:valueOut) v(30) h(357) N(n34:Number) B(0) v(22) h(101) N(n13:Text)" />
+                    <Wire Id="w17" Joints="N(n15:valueOut) v(22) h(101) N(n13:Text) B(0) v(30) h(357) N(n34:Number)" />
                     <ConfigurableMethodCall Id="n18" Bounds="47 187 225 91" Target="DisplayStringGrid\.vix">
                         <ConfigurableMethodTerminal ConfiguredValue="Mission">
                             <Terminal Id="Text" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
@@ -748,7 +748,7 @@
                     <Comment Bounds="1783 14 643 31" SizeMode="User" AttachStyle="Free">
                         <Content>Run the mission if it's the middle button, and add or subtract to the mission number</Content>
                     </Comment>
-                    <Comment Bounds="2446 149 432 31" SizeMode="User" AttachStyle="Free">
+                    <Comment Bounds="2518 143 432 31" SizeMode="User" AttachStyle="Free">
                         <Content>Adjust the mission number, and wrap around if too low or too high</Content>
                     </Comment>
                     <ConfigurableMethodCall Id="n48" Bounds="1675 187 132 91" Target="PlaySoundFile\.vix">
@@ -774,7 +774,7 @@
                 <Comment Bounds="78 -51 84 44" SizeMode="User" AttachStyle="Free">
                     <Content>Start with mission 0</Content>
                 </Comment>
-                <Comment Bounds="1521 -251 265 31" SizeMode="User" AttachStyle="Free">
+                <Comment Bounds="1556 -251 265 31" SizeMode="User" AttachStyle="Free">
                     <Content>Run until someone cancels the program</Content>
                 </Comment>
             </BlockDiagram>

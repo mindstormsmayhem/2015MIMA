@@ -456,7 +456,7 @@
                 <Comment Bounds="818 -34 226 29" SizeMode="User" AttachStyle="Free">
                     <Content>Turn and align east</Content>
                 </Comment>
-                <Comment Bounds="209 -63 142 59" SizeMode="User" AttachStyle="Free">
+                <Comment Bounds="172 -46 179 42" SizeMode="User" AttachStyle="Free">
                     <Content>Start facing north, with the letter "I" just showing</Content>
                 </Comment>
                 <Wire Id="w63" Joints="N(n70:SequenceOut) N(n83:SequenceIn)" />
