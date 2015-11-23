@@ -94,7 +94,7 @@
                 </ConfigurableMethodCall>
                 <Wire Id="w45" Joints="N(n40:SequenceOut) N(n42:SequenceIn)" />
                 <ConfigurableMethodCall Id="n43" Bounds="801 -17 163 91" Target="GoCentimeters\.ev3p">
-                    <ConfigurableMethodTerminal ConfiguredValue="20">
+                    <ConfigurableMethodTerminal ConfiguredValue="40">
                         <Terminal Id="Speed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="60">
@@ -219,7 +219,7 @@
                 </ConfigurableMethodCall>
                 <Wire Id="w46" Joints="N(n33:SequenceOut) N(n51:SequenceIn)" />
                 <ConfigurableMethodCall Id="n20" Bounds="870 123 163 91" Target="GoCentimeters\.ev3p">
-                    <ConfigurableMethodTerminal ConfiguredValue="20">
+                    <ConfigurableMethodTerminal ConfiguredValue="30">
                         <Terminal Id="Speed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="-10">
@@ -308,7 +308,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w57" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                 </ConfigurableMethodCall>
-                <Wire Id="w57" Joints="N(n9:SequenceOut) N(n41:SequenceIn) B(0) h(20) v(113) N(n45:SequenceIn)" />
+                <Wire Id="w57" Joints="N(n9:SequenceOut) h(20) v(113) N(n45:SequenceIn) B(0) N(n41:SequenceIn)" />
                 <Wire Id="w39" Joints="N(n1:SequenceOut) N(n26:SequenceIn)" />
                 <Comment Bounds="373 85 242 33" SizeMode="User" AttachStyle="Free">
                     <Content>Follow the line until in position</Content>
