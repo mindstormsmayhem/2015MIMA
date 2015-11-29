@@ -6,13 +6,13 @@
                 <fpruntime:FrontPanelCanvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:fpruntime="clr-namespace:NationalInstruments.LabVIEW.FrontPanelRuntime;assembly=NationalInstruments.LabVIEW.FrontPanelRuntime" xmlns:Model="clr-namespace:NationalInstruments.SourceModel.Designer;assembly=NationalInstruments.SourceModel" x:Name="FrontPanel" Model:DesignerSurfaceProperties.CanSnapToObjects="True" Model:DesignerSurfaceProperties.SnapToObjects="True" Model:DesignerSurfaceProperties.ShowSnaplines="True" Model:DesignerSurfaceProperties.ShowControlAdorners="True" Width="640" Height="480" />
             </FrontPanel>
             <BlockDiagram Name="__RootDiagram__">
-                <StartBlock Id="n1" Bounds="0 0 70 91" Target="X3\.Lib:StartBlockTest">
+                <StartBlock Id="n1" Bounds="836 349 70 91" Target="X3\.Lib:StartBlockTest">
                     <ConfigurableMethodTerminal>
                         <Terminal Id="Result" Direction="Output" DataType="Boolean" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w3" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="52 33 18 18" />
                 </StartBlock>
-                <ConfigurableMethodCall Id="n2" Bounds="70 0 101 91" Target="X3\.Lib:GlobalSetSingle">
+                <ConfigurableMethodCall Id="n2" Bounds="906 349 101 91" Target="X3\.Lib:GlobalSetSingle">
                     <ConfigurableMethodTerminal ConfiguredValue="mission number">
                         <Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
@@ -26,7 +26,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w6" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w3" Joints="N(n1:SequenceOut) N(n2:SequenceIn)" />
-                <ConfigurableWhileLoop Id="n4" Bounds="171 -197 3040 396" DiagramId="d0" InterruptName="Forever">
+                <ConfigurableWhileLoop Id="n4" Bounds="1007 152 3040 396" DiagramId="d0" InterruptName="Forever">
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w6" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 230 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="3022 230 18 18" />
                     <ConfigurableWhileLoop.BuiltInMethod CallType="LoopIndex">
@@ -110,7 +110,7 @@
                         <Terminal Id="SequenceOut" Direction="Output" Wire="w16" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                     </ConfigurableMethodCall>
                     <Wire Id="w16" Joints="N(n15:SequenceOut) N(n13:SequenceIn)" />
-                    <Wire Id="w17" Joints="N(n15:valueOut) v(22) h(101) N(n13:Text) B(0) v(30) h(357) N(n34:Number)" />
+                    <Wire Id="w17" Joints="N(n15:valueOut) v(30) h(357) N(n34:Number) B(0) v(22) h(101) N(n13:Text)" />
                     <ConfigurableMethodCall Id="n18" Bounds="47 187 225 91" Target="DisplayStringGrid\.vix">
                         <ConfigurableMethodTerminal ConfiguredValue="Mission">
                             <Terminal Id="Text" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
@@ -164,7 +164,7 @@
                         <Terminal Id="SequenceOut" Direction="Output" Wire="w43" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="238 33 18 18" />
                     </ConfigurableMethodCall>
                     <Wire Id="w27" Joints="N(n30:SequenceOut) N(n27:SequenceIn)" />
-                    <ConfigurableCaseStructure Id="n30" Bounds="714 141 286 176" DataType="Int32" UserSelectorBounds="0 0 0 0" Selected="D45" Default="D30" PairedConfigurableMethodCall="n34">
+                    <ConfigurableCaseStructure Id="n30" Bounds="714 141 286 176" DataType="Int32" UserSelectorBounds="0 0 0 0" Selected="D30" Default="D32" PairedConfigurableMethodCall="n34">
                         <Terminal Id="SequenceOut" Direction="Output" Wire="w27" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="268 79 18 18" />
                         <ConfigurableCaseStructure.Case Id="D30" Bounds="10 4 266 169" Pattern="0">
                             <SequenceNode Id="Output" Bounds="0 75 18 18">
@@ -232,7 +232,7 @@
                             <Wire Id="w10" Joints="N(n9:SequenceOut) N(Input:SequenceTerminal)" />
                             <Wire Id="w11" Joints="N(n9:valueOut) N(b42:D31)" />
                         </ConfigurableCaseStructure.Case>
-                        <ConfigurableCaseStructure.Case Id="D32" Bounds="10 4 266 169" Pattern="2">
+                        <ConfigurableCaseStructure.Case Id="D32" Bounds="10 4 266 169" Pattern="3">
                             <SequenceNode Id="n1" Bounds="0 75 18 18">
                                 <Terminal Id="Output" Direction="Output" Wire="w5" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                             </SequenceNode>
@@ -265,7 +265,7 @@
                             <Wire Id="w10" Joints="N(n9:SequenceOut) N(n2:Input)" />
                             <Wire Id="w11" Joints="N(n9:valueOut) N(b42:D32)" />
                         </ConfigurableCaseStructure.Case>
-                        <ConfigurableCaseStructure.Case Id="D33" Bounds="10 4 266 169" Pattern="3">
+                        <ConfigurableCaseStructure.Case Id="D33" Bounds="10 4 266 169" Pattern="4">
                             <SequenceNode Id="n1" Bounds="0 75 18 18">
                                 <Terminal Id="Output" Direction="Output" Wire="w5" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                             </SequenceNode>
@@ -298,7 +298,7 @@
                             <Wire Id="w10" Joints="N(n9:SequenceOut) N(n2:Input)" />
                             <Wire Id="w11" Joints="N(n9:valueOut) N(b42:D33)" />
                         </ConfigurableCaseStructure.Case>
-                        <ConfigurableCaseStructure.Case Id="D45" Bounds="10 4 266 169" Pattern="4">
+                        <ConfigurableCaseStructure.Case Id="D45" Bounds="10 4 266 169" Pattern="2">
                             <SequenceNode Id="n1" Bounds="0 75 18 18">
                                 <Terminal Id="Output" Direction="Output" Wire="w6" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                             </SequenceNode>
@@ -446,7 +446,7 @@
                     </ConfigurableMethodCall>
                     <Wire Id="w36" Joints="N(n36:SequenceOut) N(n43:SequenceIn)" />
                     <Wire Id="w37" Joints="N(n36:valueOut) v(22) h(98) N(n43:X)" />
-                    <ConfigurableCaseStructure Id="n37" Bounds="1892 73 624 259" DataType="Int32" UserSelectorBounds="0 0 0 0" Selected="D39" Default="D39" PairedConfigurableMethodCall="n40">
+                    <ConfigurableCaseStructure Id="n37" Bounds="1892 73 624 259" DataType="Int32" UserSelectorBounds="0 0 0 0" Selected="D37" Default="D39" PairedConfigurableMethodCall="n40">
                         <Terminal Id="SequenceOut" Direction="Output" Wire="w48" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="606 147 18 18" />
                         <ConfigurableCaseStructure.Case Id="D37" Bounds="10 4 604 252" Pattern="1">
                             <SequenceNode Id="Output" Bounds="0 143 18 18">
@@ -487,7 +487,7 @@
                                 <Terminal Id="SequenceIn" Direction="Input" Wire="w20" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                                 <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 0 0" />
                             </PairedConfigurableMethodCall>
-                            <ConfigurableCaseStructure Id="n35" Bounds="204 64 140 176" DataType="Int32" UserSelectorBounds="0 0 0 0" Selected="D22" Default="D22" PairedConfigurableMethodCall="n38">
+                            <ConfigurableCaseStructure Id="n35" Bounds="204 64 140 176" DataType="Int32" UserSelectorBounds="0 0 0 0" Selected="D36" Default="D23" PairedConfigurableMethodCall="n38">
                                 <Terminal Id="SequenceOut" Direction="Output" Wire="w23" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="122 79 18 18" />
                                 <ConfigurableCaseStructure.Case Id="D36" Bounds="10 4 120 169" Pattern="0">
                                     <SequenceNode Id="Output" Bounds="0 75 18 18">
@@ -523,7 +523,7 @@
                                     <Wire Id="w4" Joints="N(Output:SequenceTerminal) N(n7:SequenceIn)" />
                                     <Wire Id="w5" Joints="N(n7:SequenceOut) N(Input:SequenceTerminal)" />
                                 </ConfigurableCaseStructure.Case>
-                                <ConfigurableCaseStructure.Case Id="D22" Bounds="10 4 120 169" Pattern="2">
+                                <ConfigurableCaseStructure.Case Id="D22" Bounds="10 4 120 169" Pattern="3">
                                     <SequenceNode Id="n1" Bounds="0 75 18 18">
                                         <Terminal Id="Output" Direction="Output" Wire="w4" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                                     </SequenceNode>
@@ -540,7 +540,7 @@
                                     <Wire Id="w4" Joints="N(n1:Output) N(n7:SequenceIn)" />
                                     <Wire Id="w5" Joints="N(n7:SequenceOut) N(n2:Input)" />
                                 </ConfigurableCaseStructure.Case>
-                                <ConfigurableCaseStructure.Case Id="D23" Bounds="10 4 120 169" Pattern="3">
+                                <ConfigurableCaseStructure.Case Id="D23" Bounds="10 4 120 169" Pattern="4">
                                     <SequenceNode Id="n1" Bounds="0 75 18 18">
                                         <Terminal Id="Output" Direction="Output" Wire="w4" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                                     </SequenceNode>
@@ -557,7 +557,7 @@
                                     <Wire Id="w4" Joints="N(n1:Output) N(n48:SequenceIn)" />
                                     <Wire Id="w5" Joints="N(n48:SequenceOut) N(n2:Input)" />
                                 </ConfigurableCaseStructure.Case>
-                                <ConfigurableCaseStructure.Case Id="D20" Bounds="10 4 120 169" Pattern="4">
+                                <ConfigurableCaseStructure.Case Id="D20" Bounds="10 4 120 169" Pattern="2">
                                     <SequenceNode Id="n1" Bounds="0 75 18 18">
                                         <Terminal Id="Output" Direction="Output" Wire="w4" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                                     </SequenceNode>
@@ -771,10 +771,10 @@
                     <Wire Id="w49" Joints="N(n7:SequenceOut) N(n1:SequenceIn)" />
                 </ConfigurableWhileLoop>
                 <Wire Id="w6" Joints="N(n2:SequenceOut) N(n4:SequenceIn)" />
-                <Comment Bounds="78 -51 84 44" SizeMode="User" AttachStyle="Free">
+                <Comment Bounds="914 298 84 44" SizeMode="User" AttachStyle="Free">
                     <Content>Start with mission 0</Content>
                 </Comment>
-                <Comment Bounds="1556 -251 265 31" SizeMode="User" AttachStyle="Free">
+                <Comment Bounds="2392 98 265 31" SizeMode="User" AttachStyle="Free">
                     <Content>Run until someone cancels the program</Content>
                 </Comment>
             </BlockDiagram>
