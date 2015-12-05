@@ -240,6 +240,15 @@
                     <Wire Id="w49" Joints="N(n45:SequenceOut) N(n9:SequenceIn)" />
                     <Wire Id="w50" Joints="N(b48:d0) N(n32:Y)" />
                     <Wire Id="w52" Joints="N(b50:d0) N(n42:Y)" />
+                    <Comment Bounds="90 5 520 30" SizeMode="User" AttachStyle="Free">
+                        <Content>Move left motor based on how far away from gray the left light sensor reading is</Content>
+                    </Comment>
+                    <Comment Bounds="705 8 538 30" SizeMode="User" AttachStyle="Free">
+                        <Content>Move right motor based on how far away from gray the right light sensor reading is</Content>
+                    </Comment>
+                    <Comment Bounds="1356 8 538 30" SizeMode="User" AttachStyle="Free">
+                        <Content>Keep going until both light sensors are close enough to their gray values</Content>
+                    </Comment>
                     <ConfigurableWhileLoop.ConfigurableLoopTunnel AutoIndex="False" Id="b18" Terminals="n2=w18, d0=w20" Bounds="381 249 30 63" />
                     <ConfigurableWhileLoop.ConfigurableLoopTunnel AutoIndex="False" Id="b22" Terminals="n2=w23, d0=w22" Bounds="350 249 30 63" />
                     <ConfigurableWhileLoop.ConfigurableLoopTunnel AutoIndex="False" Id="b29" Terminals="n2=w29, d0=w24" Bounds="544 249 30 63" />
@@ -367,16 +376,16 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w39" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w36" Joints="N(n35:SequenceOut) N(n36:SequenceIn)" />
-                <ConfigurableCaseStructure Id="n43" Bounds="451 513 228 176" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D45" Default="D44" PairedConfigurableMethodCall="n46">
-                    <Terminal Id="SequenceOut" Direction="Output" Wire="w43" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="210 79 18 18" />
-                    <ConfigurableCaseStructure.Case Id="D44" Bounds="10 4 208 169" Pattern="True">
-                        <SequenceNode Id="Output" Bounds="0 75 18 18">
+                <ConfigurableCaseStructure Id="n43" Bounds="451 517 228 172" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D45" Default="D44" PairedConfigurableMethodCall="n46">
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w43" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="210 75 18 18" />
+                    <ConfigurableCaseStructure.Case Id="D44" Bounds="10 4 208 165" Pattern="True">
+                        <SequenceNode Id="Output" Bounds="0 71 18 18">
                             <Terminal Id="SequenceTerminal" Direction="Output" Wire="w5" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
-                        <SequenceNode Id="Input" Bounds="181 75 18 18">
+                        <SequenceNode Id="Input" Bounds="181 71 18 18">
                             <Terminal Id="SequenceTerminal" Direction="Input" Wire="w6" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
-                        <ConfigurableMethodCall Id="n45" Bounds="18 42 163 91" Target="Arithmetic_Multiply\.vix">
+                        <ConfigurableMethodCall Id="n45" Bounds="18 38 163 91" Target="Arithmetic_Multiply\.vix">
                             <ConfigurableMethodTerminal ConfiguredValue="1">
                                 <Terminal Id="X" Direction="Input" Wire="w7" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
@@ -394,14 +403,14 @@
                         <Wire Id="w7" Joints="N(b43:D44) N(n45:X)" />
                         <Wire Id="w9" Joints="N(n45:Result) N(b42:D44)" />
                     </ConfigurableCaseStructure.Case>
-                    <ConfigurableCaseStructure.Case Id="D45" Bounds="10 4 208 169" Pattern="False">
-                        <SequenceNode Id="Output" Bounds="0 75 18 18">
+                    <ConfigurableCaseStructure.Case Id="D45" Bounds="10 4 208 165" Pattern="False">
+                        <SequenceNode Id="Output" Bounds="0 71 18 18">
                             <Terminal Id="SequenceTerminal" Direction="Output" Wire="w4" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
-                        <SequenceNode Id="Input" Bounds="181 75 18 18">
+                        <SequenceNode Id="Input" Bounds="181 71 18 18">
                             <Terminal Id="SequenceTerminal" Direction="Input" Wire="w5" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
-                        <ConfigurableMethodCall Id="n44" Bounds="18 42 163 91" Target="Arithmetic_Multiply\.vix">
+                        <ConfigurableMethodCall Id="n44" Bounds="18 38 163 91" Target="Arithmetic_Multiply\.vix">
                             <ConfigurableMethodTerminal ConfiguredValue="1">
                                 <Terminal Id="X" Direction="Input" Wire="w7" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
@@ -419,8 +428,8 @@
                         <Wire Id="w7" Joints="N(b43:D45) N(n44:X)" />
                         <Wire Id="w8" Joints="N(n44:Result) N(b42:D45)" />
                     </ConfigurableCaseStructure.Case>
-                    <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b43" Terminals="n43=w45, D44=w7, D45=w7" Bounds="82 143 30 63" />
-                    <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b42" Terminals="n43=w44, D44=w9, D45=w8" Bounds="144 143 30 63" />
+                    <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b43" Terminals="n43=w45, D44=w7, D45=w7" Bounds="82 139 30 63" />
+                    <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b42" Terminals="n43=w44, D44=w9, D45=w8" Bounds="144 139 30 63" />
                 </ConfigurableCaseStructure>
                 <PairedConfigurableMethodCall Id="n46" Bounds="366 559 85 91" Target="CaseSelector_Boolean\.vix" PairedStructure="n43">
                     <ConfigurableMethodTerminal ConfiguredValue="False">
@@ -436,13 +445,28 @@
                 <Wire Id="w43" Joints="N(n43:SequenceOut) N(n11:SequenceIn)" />
                 <Wire Id="w45" Joints="N(n36:valueOut) v(94) h(214) N(b43:n43)" />
                 <Wire Id="w39" Joints="N(n36:SequenceOut) N(n46:SequenceIn)" />
-                <ConfigurableMegaAccessor Id="n47" Bounds="-43 559 49 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Input">
+                <ConfigurableMegaAccessor Id="n47" Bounds="16 559 49 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Input">
                     <ConfigurableMethodTerminal>
                         <Terminal Id="Far\ side\?" Direction="Output" Wire="w47" DataType="Boolean" Hotspot="0.5 1" Bounds="10 56 30 27" />
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
-                <Wire Id="w47" Joints="N(n47:Far\ side\?) v(22) h(453) N(n46:Boolean)" />
+                <Wire Id="w47" Joints="N(n47:Far\ side\?) v(22) h(394) N(n46:Boolean)" />
                 <Wire Id="w46" Joints="N(n1:SequenceOut) N(n35:SequenceIn)" />
+                <Comment Bounds="135 511 132 43" SizeMode="User" AttachStyle="Free">
+                    <Content>How close to gray is "close enough"</Content>
+                </Comment>
+                <Comment Bounds="271 511 95 43" SizeMode="User" AttachStyle="Free">
+                    <Content>Speed adjust factor</Content>
+                </Comment>
+                <Comment Bounds="530 470 144 43" SizeMode="User" AttachStyle="Free">
+                    <Content>Change adjust factor based on side of line</Content>
+                </Comment>
+                <Comment Bounds="687 523 410 30" SizeMode="User" AttachStyle="Free">
+                    <Content>Calculate ranges for left light sensor</Content>
+                </Comment>
+                <Comment Bounds="1110 523 410 30" SizeMode="User" AttachStyle="Free">
+                    <Content>Calculate ranges for right light sensor</Content>
+                </Comment>
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>
