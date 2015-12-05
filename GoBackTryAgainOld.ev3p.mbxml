@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EditorDefinitions>
   <PolyGroups>
-    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_051_ColorSensor">
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_057_TouchSensor">
       <Block>
         <Mode>MyBlock</Mode>
-        <Description>Square up on the far side of a black line</Description>
+        <Description>Go back until both touch sensors are pressed.  If stuck, drive forward and try again, until finally aligned.</Description>
         <Reference Type="VILib" />
         <PaletteInfo Weight="0.5" />
       </Block>

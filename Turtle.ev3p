@@ -398,7 +398,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w68" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                 </ConfigurableMethodCall>
-                <Wire Id="w68" Joints="N(n61:SequenceOut) h(217) v(100) N(n79:SequenceIn) B(0) v(100) N(n68:SequenceIn)" />
+                <Wire Id="w68" Joints="N(n61:SequenceOut) v(100) N(n68:SequenceIn) B(0) h(217) v(100) N(n79:SequenceIn)" />
                 <ConfigurableMethodCall Id="n69" Bounds="-512 -269 163 91" Target="PivotRight\.ev3p">
                     <ConfigurableMethodTerminal ConfiguredValue="True">
                         <Terminal Id="Stop" Direction="Input" DataType="Boolean" Hotspot="0.5 1" Bounds="116 56 30 27" />
@@ -437,7 +437,7 @@
                     <Content>Go east to the black line</Content>
                 </Comment>
                 <Wire Id="w83" Joints="N(n4:SequenceOut) N(n71:SequenceIn)" />
-                <ConfigurableMethodCall Id="n71" Bounds="410 -301 75 91" Target="GoBackTouchTryAgain\.ev3p">
+                <ConfigurableMethodCall Id="n71" Bounds="410 -301 75 91" Target="GoBackTryAgainOld\.ev3p">
                     <ConfigurableMethodTerminal ConfiguredValue="0">
                         <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
@@ -445,7 +445,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w84" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="57 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w84" Joints="N(n71:SequenceOut) N(n8:SequenceIn)" />
-                <ConfigurableMethodCall Id="n72" Bounds="-262 -16 75 91" Target="GoBackTouchTryAgain\.ev3p">
+                <ConfigurableMethodCall Id="n72" Bounds="-262 -16 75 91" Target="GoBackTryAgainOld\.ev3p">
                     <ConfigurableMethodTerminal ConfiguredValue="0">
                         <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
@@ -617,7 +617,7 @@
                 </ConfigurableWaitFor>
                 <Wire Id="w98" Joints="N(n87:SequenceOut) N(n86:SequenceIn)" />
                 <Wire Id="w99" Joints="N(n86:SequenceOut) h(86) v(5) N(n84:SequenceIn)" />
-                <Wire Id="w94" Joints="N(n41:SequenceOut) h(10) v(101) h(-574) v(46) N(n81:SequenceIn) B(0) h(77) v(-119) N(n54:SequenceIn)" />
+                <Wire Id="w94" Joints="N(n41:SequenceOut) h(77) v(-119) N(n54:SequenceIn) B(0) h(10) v(101) h(-574) v(46) N(n81:SequenceIn)" />
                 <ConfigurableMethodCall Id="n88" Bounds="780 -301 101 91" Target="SquareUpOnLine\.ev3p">
                     <ConfigurableMethodTerminal ConfiguredValue="True">
                         <Terminal Id="Far\ side\?" Direction="Input" DataType="Boolean" Hotspot="0.5 1" Bounds="54 56 30 27" />
